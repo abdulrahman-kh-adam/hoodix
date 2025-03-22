@@ -1,0 +1,22 @@
+@media (max-width: 990px) {
+  .slider {
+    display: none;
+  }
+}
+
+.mens-wear {
+  background-color: #7887f8;
+}
+
+.contact-form {
+  background-color: #7887f8;
+}
+
+.womens-wear {
+  margin-bottom: 0 !important;
+}
+
+.contact-form {
+  margin-top: 0 !important;
+  padding-top: 30px;
+}

@@ -1,0 +1,45 @@
+.hoodies .filters {
+  background-color: #7887f8;
+  height: fit-content;
+  padding: 25px 15px;
+}
+
+.hoodies .filters h2 {
+  font-weight: 700;
+  font-size: 40px;
+  /* margin-bottom: 20px; */
+}
+
+.hoodies .filters h3 {
+  margin: 15px 0;
+}
+
+.hoodies .filters form {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.hoodies .filters .category-filter .form-group,
+.hoodies .filters .price-filter .form-group {
+  margin: 15px 0;
+}
+
+.hoodies .filters .category-filter input,
+.hoodies .filters .price-filter input {
+  width: 25px;
+  height: 25px;
+}
+
+.hoodies .filters .category-filter label,
+.hoodies .filters .price-filter label {
+  font-size: 20px;
+  width: fit-content !important;
+}
+
+@media (max-width: 991px) {
+  .hoodies .filters {
+    display: none;
+  }
+}

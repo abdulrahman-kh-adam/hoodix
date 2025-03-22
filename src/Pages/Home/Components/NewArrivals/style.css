@@ -1,0 +1,14 @@
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products.row > * {
+  width: fit-content !important;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

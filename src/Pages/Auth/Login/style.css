@@ -1,0 +1,15 @@
+.login-container {
+  min-height: calc(100vh - 150px);
+}
+
+.login-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}

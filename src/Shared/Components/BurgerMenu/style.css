@@ -1,0 +1,121 @@
+/* Burger Icon */
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger-icon span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Transform lines into X */
+.burger-icon.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.burger-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Menu Styling */
+.burger-menu {
+  display: none;
+  position: absolute;
+  background-color: #11115f;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 63px;
+  padding: 15px 0;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes for sliding the menu */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Animated show/hide menu */
+.burger-menu.show {
+  display: block;
+  animation: slideDown 0.4s ease forwards;
+}
+
+.burger-menu.hide {
+  animation: slideUp 0.4s ease forwards;
+  display: block; /* Ensure it's visible while animating out */
+}
+
+/* Menu List */
+.burger-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu ul li {
+  padding: 15px 0;
+  text-align: center;
+  width: fit-content;
+  position: relative;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.burger-menu ul li:hover {
+  color: #ffd700;
+}
+
+.burger-menu ul li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #f5f5f5;
+  left: 0;
+  bottom: 10px;
+  transition: width 0.3s ease;
+}
+
+.burger-menu ul li:hover::before {
+  width: 100%;
+}
