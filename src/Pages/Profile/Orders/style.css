@@ -1,0 +1,10 @@
+.orders {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.orders-page .title .page-title {
+  font-size: 35px;
+  margin: 50px 0 20px 0;
+}

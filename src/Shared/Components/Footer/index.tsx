@@ -7,6 +7,7 @@ import "./style.css";
 const Footer = () => {
   return (
     <Container className="footer">
+      <hr />
       <Row>
         <Col>
           <p>All rights reserved for Hoodix</p>

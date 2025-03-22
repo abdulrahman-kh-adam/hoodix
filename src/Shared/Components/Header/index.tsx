@@ -6,7 +6,7 @@ import cart from "../../../images/Shopping cart.svg";
 import user from "../../../images/User Profile Circle.svg";
 
 const Header = () => {
-  const auth = true;
+  const auth = false;
 
   return (
     <div className="header">

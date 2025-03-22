@@ -1,12 +1,13 @@
-.shipping-page {
-  min-height: calc(100vh - 250px);
+.personal-information {
+  margin-bottom: 50px;
 }
-.shipping-address .title .page-title {
+
+.personal-information .title .page-title {
   font-size: 35px;
   margin: 50px 0 20px 0;
 }
 
-.shipping-address .info-form form {
+.personal-information .info-form form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,13 +18,13 @@
   }
 }
 
-.shipping-address .info-form button {
+.info-form button {
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 @media (max-width: 990px) {
-  .shipping-address .info-form form {
+  .personal-information .info-form form {
     flex-direction: column !important;
     align-items: center;
   }

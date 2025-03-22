@@ -1,0 +1,29 @@
+.order {
+  background-color: #7887f8;
+  margin: 15px 0;
+  padding: 15px;
+  width: 49%;
+}
+
+.order-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 7px;
+}
+
+.order-info p,
+.order-info h4 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.order-info p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .order {
+    width: 100%;
+  }
+}
